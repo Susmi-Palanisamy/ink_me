@@ -1,0 +1,17 @@
+<?php
+$HOSTNAME='localhost';
+$USERNAME='csed24' ;
+$PASSWORD='csed24';
+$DATABASE='csed24';
+
+$con=mysqli_connect($HOSTNAME,$USERNAME,$PASSWORD,$DATABASE);
+
+if($con)
+{
+    echo "CONNECTION SUCCESSFUL";
+}
+else
+{
+    die(mysqli_error($con));
+}
+?>

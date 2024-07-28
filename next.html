@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Image Example</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    #video-container {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
+    #video-background {
+      width: 100%;
+      height: auto;
+    }
+    body {
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      min-height: 100vh; 
+    }
+    .content
+{
+text-align: center;
+position: relative;
+top: 0;
+margin:0;
+align-items: center;
+}
+.content h1{
+     font-size: 170px;
+     color:#fff;
+     font-weight:600;
+}
+.content a
+{
+text-decoration: none;
+display: inline-block;
+color: #fff;
+font-size: 34px;
+border: 2px solid #fff;
+padding: 14px 70px;
+border-radius:50px;
+margin-top: 50px;
+}
+  </style>
+</head>
+<body>
+    <div id="video-container">
+        <video autoplay loop muted id="video-background">
+          <source src="4125983-uhd_4096_2160_25fps (1).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+<div class="container-fluid bg-image">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 text-center">
+        <div class="content"><br><br><br><br><br><br>
+      <center><h1>INK ME</h1></center>
+    </div>
+  </div>
+</div></div>
+</body>
+</html>

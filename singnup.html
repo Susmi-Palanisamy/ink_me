@@ -1,0 +1,177 @@
+<?php
+$registered=0;
+$userexisted=0;
+if($_SERVER['REQUEST_METHOD']=='POST'){
+    include 'loginpage.php';
+    $UserName =$_POST['UserName'];
+    $Email=$_POST['Email'];
+    $Password=$_POST['Password'];
+    $Phone=$_POST['Phone'];   
+    $Gender=$_POST['Gender'];   
+    $Type=$_POST['Type'];   
+   $sql="SELECT * FROM tat WHERE UserName ='$UserName'";
+$result=mysqli_query($con,$sql);
+if($result){
+    $num=mysqli_num_rows($result);
+    if($num>0){
+        $userexisted=1;
+    }
+    else{
+        $sql="INSERT INTO tat (UserName,Email,Password,Phone,Gender,Type) VALUES ('$UserName','$Email','$Password','$Phone','$Gender','$Type')";
+$result=mysqli_query($con,$sql);
+if($result){
+    $registered=1;
+}
+else{
+    die(mysqli_error($con));
+}
+}
+}
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url("backgroud img.png");
+            background-size:1600px 725px;
+            background-repeat: no-repeat;
+            background-color: silver; 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            width: 50%;
+            margin: 50px auto;
+            background-color: rgba(192, 192, 192, 0.5); 
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            display: inline-block;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #008000; 
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #006400; 
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        select {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+.round {
+  border-radius: 50%;
+}
+    </style>
+</head>
+<body>
+<?php
+if($userexisted){
+ echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+ <strong>Error</strong> User already exist.
+ <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>';
+}
+?>
+<?php
+if($registered){
+ echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+ <strong>Congrats</strong> You are successfully Signed In.
+ <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>';
+}
+ ?>
+
+    <div class="container">
+        <form action="signup.php" method="post" id="form1" name="form1">
+            <div class="form-group">
+                <label for="username">Name</label>
+                <input type="text" class="form-control" id="Username" name="UserName">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="Email" name="Email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password</label>
+                <input type="password" class="form-control" id="pwd" name="Password">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Phone</label>
+                <input type="password" class="form-control" id="pwd" name="Phone">
+            </div>
+            <div class="form-group">
+                <label>Gender</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Gender" id="male" value="male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Gender" id="female" value="female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Type</label>
+                <input type="password" class="form-control" id="pwd" name="Type">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <center>
+    <a href="FAQ.php" class="previous">&laquo; Previous</a>
+<a href="Login.php" class="next">Next &raquo;</a>
+</center>
+</body>
+</html>

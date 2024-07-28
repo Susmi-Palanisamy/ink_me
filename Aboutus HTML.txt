@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Tattoo Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .about-section {
+      background-color: #343a40;
+      color: #fff;
+      padding: 100px 0;
+    }
+    .about-text {
+      font-size: 18px;
+    }
+    .team-member {
+      border: none;
+      border-radius: 0;
+      background-color: transparent;
+    }
+    a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+.round {
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+  <section class="about-section text-center">
+    <div class="container">
+      <h2 class="mb-1">About Us</h2>
+      <p class="about-text">
+        Welcome to our tattoo shop! We are a passionate team of artists dedicated to providing you with top-quality tattoos and excellent customer service. With years of experience and a commitment to creativity, we strive to bring your tattoo ideas to life in the most vibrant and professional way possible.
+      </p>
+    </div>
+  </section>
+  <section class="team-section text-center">
+    <div class="container">
+      <h2 class="mb-3">Meet Our Team</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card team-member">
+            <img src="A1.png" class="rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">Lead Tattoo Artist</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card team-member">
+            <img src="A2.png" class="rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jane Smith</h5>
+              <p class="card-text">Tattoo Artist</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card team-member">
+            <img src="A3.jpeg" class="rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Alex Johnson</h5>
+              <p class="card-text">Apprentice</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><center>
+  <a href="Explore.php" class="previous">&laquo; Previous</a>
+<a href="Services.php" class="next">Next &raquo;</a></center>
+</body>
+</html>

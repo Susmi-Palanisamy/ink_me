@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    container mt-3{
+      text-align: center;
+    }
+  body {
+      position: relative;
+      background-color: grey; 
+  }
+  span {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+    background-color: white;
+  }
+  </style>
+</head>
+<div class="offcanvas offcanvas-start" id="demo">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">USES</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p><i>In criminal investigations</i></p>
+      <p><i>ostmortem identification</i></p>
+      <p><i>Identification of animals</i></p>
+      <button class="btn btn-danger" type="button">A Button</button>
+    </div>
+  </div>
+  <div class="container-fluid mt-3">
+    <h3>Offcanvas Sidebar</h3>
+    <center><button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+      Open
+    </button></center>
+  </div>
+  <div class="container mt-3">
+    <div class="container mt-3">
+      <div class="dropdown" data-bs-theme="dark">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+          Ink Me
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="Aboutus.php">about</a></li>
+          <li><a class="dropdown-item" href="Services.php">services</a></li>
+          <li><a class="dropdown-item" href="grid.php">grid</a></li>
+        </ul>
+      </div>
+    </div>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1">Section 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">Section 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3">Section 3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section4">Section 4</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section5">Section 5</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+  <h1>Section 1</h1>
+  <h1>In criminal investigations</h1>
+   <p> These markings can potentially provide a wealth of information about an individual. Simple visual examinations, as well as more advanced digital recognition technologies, are employed to assist in identifying or providing clues about suspects or victims of crimes</p>
+</div>
+<div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+  <h1>Section 2</h1>
+  <h1>Postmortem identification</h1>
+   <p> Tattoo marking a deserter from the British Army; skin removed post-mortem
+    Tattoos are sometimes used by forensic pathologists to help them identify burned, putrefied, or mutilated bodies. As tattoo pigment lies encapsulated deep in the skin, tattoos are not easily destroyed even when the skin is burned.</p>
+</div>
+<div id="section3" class="container-fluid bg-primary text-white" style="padding:100px 20px;">
+  <h1>Section 3</h1>
+ <h1> Cosmetic</h1>
+<p>Permanent makeup is the use of tattoos to create long-lasting eyebrows, lips (liner and/or lip blushing), eyes (permanent eyeliner), and even moles definition. Natural colors are used to mimic eyebrows and freckles, while diverse pigments for lips and eyeliner for a look akin to traditional makeup</p>
+</div>
+    <div id="section4" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+    <h1>Section 4</h1>
+   <h1>Identification of animals</h1>
+   <p>Pets, show animals, thoroughbred horses, and livestock are sometimes tattooed with animal identification marks. Ear tattoos are a method of identification for beef cattle.[23] Tattooing with a 'slap mark' on the shoulder or on the ear is the standard identification method in commercial pig farming. Branding is used for similar reasons and is often performed without anesthesia, but is different from tattooing as no ink or dye is inserted during the process, the mark instead being caused by permanent scarring of the skin.</p>
+  </div>
+  <div id="section5" class="container-fluid bg-danger text-white" style="padding:100px 20px;">
+    <h1>Section 5</h1>
+    <h1> Medical Main article:</h1>
+   <p> Medical tattoo
+Medical tattoos are used to ensure instruments are properly located for repeated application of radiotherapy and for the areola in some forms of breast reconstruction. Tattooing has also been used to convey medical information about the wearer (e.g., blood group, medical condition, etc.). Alzheimer patients may be tattooed with their names, so they may be easily identified if they go missing.[29] Additionally, tattoos are used in skin tones to cover vitiligo, a skin pigmentation disorder</p>
+  </div>
+</body>
+</html>

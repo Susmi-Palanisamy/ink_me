@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Tattoo Shop</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-gF9w1aym6w1xpUXWj7XZH63qoPjI3zU5XjFF6j6UaMhP+1tpNvhc2oyLryexhUzwhF/d9LN4s+M3kGAA+MaCuQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+.round {
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Tattoo Shop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.php">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="pb-3">Get in Touch</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="pb-3">Our Location</h2>
+          <address>
+            <strong>Tattoo Shop</strong><br>
+            123 Main Street<br>
+            City, State ZIP<br>
+            <i class="fas fa-phone-alt"></i> Phone: (123) 456-7890<br>
+            <i class="fas fa-envelope"></i> Email: info@tattooshop.com
+          </address>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1131664782074!2d-75.16563268463829!3d39.95258397942115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c62f08cb2d6b%3A0x65aae01848ca94d8!2sPhiladelphia%2C%20PA!5e0!3m2!1sen!2sus!4v1638843323366!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <center>
+  <a href="Services.php" class="previous">&laquo; Previous</a>
+  <a href="FAQ.php" class="next">Next &raquo;</a>
+</center>
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          &copy; 2024 Tattoo Shop
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

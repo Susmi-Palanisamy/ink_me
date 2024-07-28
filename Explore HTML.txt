@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+    .hide {
+      display: none;
+    }
+    .myDIV:hover + .hide {
+      display: block;
+      color: red;
+    }
+    a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+.round {
+  border-radius: 50%;
+}
+    </style>
+    <br>
+<body>  
+    <div class="container-fluid padding">
+        <div class="text-center">
+            <div class="col-12">
+                <h1>Ink Me</h1>
+            </div>
+        </div>
+    </div> <br>
+    <div class="text-center">
+    <div class="myDIV">Video</div>
+    <div class="hide"></div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="YouTube - (15) Powerful Meanings Behind Tattoos 2020 _ Popular Tattoos With there Meanings _ Top Tattoos Of 2020 _ - YouTube 2024-04-11 12-07-22.mp4" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h2>Connect</h2>
+        </div>
+    </div>
+</div>
+<div class="bg-dark text-white p-3">
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4 pt-0">
+                    <div class="footer-image">
+                    <img src="g3.jpg" style="width:5%">
+                    </div>
+                    <hr class="light">
+                    <p>555-555-5555</p>
+                    <p>email@hhemail.com</p>
+                    <p>69 Street Name</p>
+                    <p>City, State, 888</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Our hours</h5>
+                    <hr class="light">
+                    <p>Monday: 9am - 5pm</p>
+                    <p>Saturday: 10am - 4pm</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Service Area</h5>
+                    <hr class="light">
+                    <p>City, State, 900</p>
+                    <p>City, State, 800</p>
+                    <p>City, State, 700</p>
+                    <p>City, State, 600</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5>&copy; Website Learning</h5>
+                </div>
+            </div>
+        </div>
+    </footer><center>
+    <a href="index.php" class="previous">&laquo; Previous</a>
+<a href="Aboutus.php" class="next">Next &raquo;</a></center>
+</div>
+</body>
+</html>
