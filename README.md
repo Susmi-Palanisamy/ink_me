@@ -35,11 +35,13 @@ Consultations: Schedule a consultation to discuss your ideas and get professiona
 ![Ink Me](Sections.png)
 
 *Why Choose Us?*
+
 At Ink Me, we are dedicated to providing a memorable tattoo experience. From your initial consultation to the final inking, we prioritize clear communication, quality artistry, and client satisfaction. Our portfolio of work speaks for itself, showcasing a wide range of styles from traditional to modern.
 
 ![Ink Me](Service.png)
 
 *Contact Us*
+
 For inquiries, appointments, or just to say hello, feel free to reach out:
 
 ![Ink Me](Signup.png)
